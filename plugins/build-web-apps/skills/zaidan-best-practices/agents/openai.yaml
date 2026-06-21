@@ -1,0 +1,7 @@
+interface:
+  display_name: "Zaidan Best Practices"
+  short_description: "Compose SolidJS Zaidan UI with shadcn rules."
+  icon_small: "./assets/zaidan.svg"
+  icon_large: "./assets/zaidan.svg"
+  brand_color: "#212F48"
+  default_prompt: "Use $zaidan-best-practices to build a SolidJS settings panel with Zaidan components."

@@ -1,0 +1,47 @@
+{
+  "skill_name": "zaidan-best-practices",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm building a SolidJS app with Zaidan. Create a settings form with full name, email address, and notification preferences. Include validation states.",
+      "expected_output": "A SolidJS component using Zaidan FieldGroup, Field, Switch/Checkbox or ToggleGroup as appropriate, class/for syntax, data-invalid/aria-invalid, semantic tokens, and gap spacing.",
+      "files": [],
+      "expectations": [
+        "Uses SolidJS syntax: class, for, createSignal if state is needed, and event.currentTarget",
+        "Uses FieldGroup and Field for form layout",
+        "Uses data-invalid on Field and aria-invalid on invalid controls",
+        "Uses Switch or Checkbox for independent booleans and ToggleGroup only for segmented option sets",
+        "Uses gap-* instead of space-y-* or space-x-*",
+        "No React imports, className, htmlFor, useState, or lucide-react"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Create an edit profile dialog in SolidJS using Zaidan. Include avatar, name input, bio textarea, Save and Cancel buttons, and icons.",
+      "expected_output": "A SolidJS component with DialogTitle, AvatarFallback, lucide-solid icons, data-icon attributes, Kobalte as={Button}, and Zaidan form components.",
+      "files": [],
+      "expectations": [
+        "Uses DialogTrigger as={Button} instead of asChild or render",
+        "Includes DialogTitle for accessibility",
+        "Avatar includes AvatarFallback",
+        "Icons import from lucide-solid and use data-icon",
+        "No manual icon sizing classes inside buttons",
+        "Uses class instead of className"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Create a SolidJS analytics card that shows an ECharts bar chart with loading state and percentage badges using Zaidan.",
+      "expected_output": "A SolidJS component with full Card composition, ChartContainer/ECharts options, Skeleton, Badge, semantic tokens, and no Recharts.",
+      "files": [],
+      "expectations": [
+        "Uses ChartContainer and ECharts option objects instead of Recharts components",
+        "Uses full Card composition with CardHeader, CardTitle, CardDescription, CardContent",
+        "Uses Skeleton for loading placeholders",
+        "Uses Badge for percentage changes",
+        "Uses semantic color tokens and CSS variables like var(--chart-1)",
+        "No recharts import"
+      ]
+    }
+  ]
+}
